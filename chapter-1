@@ -1,0 +1,135 @@
+Java Refresher
+    
+      A java program is mostly a collection of objects of many different types
+      
+      
+      class :  template that describes the kinds of state and behavior that objects 
+of its type support
+
+      object : when the Java Virtual Machine (JVM) encounters the 
+new keyword, it will use the appropriate class to make an object which is an 
+instance of that class. That object will have its own state, and access to all of 
+the behaviors defined by its class.
+
+     State (instance variables): Each object (instance of a class) will have its 
+own unique set of instance variables as defined in the class
+
+
+    Behavior (methods) : When a programmer creates a class, she creates methods for that class. Methods are where the class' logic is stored. Methods are 
+where the real work gets done. They are where algorithms get executed, and 
+data gets manipulated.
+
+---------------------------------------------------------------
+
+Legal Identifiers ::
+
+        ■Identifiers must start with a letter, a currency character ($), or a connecting 
+        character such as the underscore ( _ ). Identifiers cannot start with a number!
+        ■ After the first character, identifiers can contain any combination of letters, 
+        currency characters, connecting characters, or numbers.
+        ■ In practice, there is no limit to the number of characters an identifier can 
+        contain.
+        ■ You can't use a Java keyword as an identifier. Table 1-1 lists all of the Java 
+        keywords including one new one for 5.0, enum.
+        ■ Identifiers in Java are case-sensitive; foo and FOO are two different identifiers.
+
+
+Examples of legal and illegal identifiers follow, first some legal identifiers:
+int _a; 
+int $c; 
+int ______2_w; 
+int _$; 
+int this_is_a_very_detailed_name_for_an_identifier;
+
+
+
+The following are illegal (it's your job to recognize why):
+int :b;  x
+int -d;  x
+int e#;  /
+int .f;  x 
+int 7g;  x
+
+
+------------------------------------------------
+list of keywords
+
+abstract
+boolean 
+break 
+byte
+case
+catch
+char 
+class 
+const 
+continue 
+default 
+do
+double 
+else 
+extends 
+final 
+finally 
+float
+for 
+goto 
+if 
+implements 
+import 
+instanceof
+int interface long native new package
+private 
+protected 
+public 
+return 
+short 
+static
+strictfp 
+super 
+switch 
+synchronized 
+this 
+throw
+throws 
+transient 
+try 
+void 
+volatile 
+while
+assert 
+enum
+
+---------------------------------------------------
+
+Sun's Java Code Conventions ::
+
+line length - Lines should not be longer than 80 characters. indentation - Each indentation unit must be 4 spaces
+
+----------------------------------------------------
+JavaBeans Standards
+
+The JavaBeans spec is intended to help Java developers create Java components 
+that can be easily used by other Java developers in a visual Integrated Development 
+Environment (IDE) tool (like Eclipse or NetBeans).
+
+
+Examples of valid JavaBean method signatures are
+
+        public void setMyValue(int v)
+        public int getMyValue()
+        public boolean isMyStatus()
+        public void addMyListener(MyListener m)
+        public void removeMyListener(MyListener m)
+
+
+
+Examples of invalid JavaBean method signatures are
+
+        void setCustomerName(String s) // must be public
+        public void modifyMyValue(int v) // can't use 'modify'
+        public void addXListener(MyListener m) // listener type mismatch
+
+
+      
+      
