@@ -44,11 +44,11 @@ int this_is_a_very_detailed_name_for_an_identifier;
 
 
 The following are illegal (it's your job to recognize why):
-int :b;  x
-int -d;  x
-int e#;  /
-int .f;  x 
-int 7g;  x
+int :b;  x --->illegal start of expression
+int -d;  x --->illegal start of expression
+int e#;  x --->can't use spcl symbols
+int .f;  x --->      ''
+int 7g;  x  --->cant start wit digits
 
 
 ------------------------------------------------
